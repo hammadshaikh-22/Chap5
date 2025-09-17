@@ -8,8 +8,8 @@
 <body>
     <script>
         var n1,n2,sum,prod,div,subt,mod;
-        n1= prompt("Enter any number: ");
-        n2= prompt("Enter any number: ");
+        n1= +prompt("Enter any number: ");
+        n2= +prompt("Enter any number: ");
         sum=n1+n2;
         alert(sum)
         subt=n1-n2;
@@ -31,6 +31,23 @@
         num--;
         alert("The value of variable after decrement is:"+num)
         alert("The remainder of value with 3 is:"+num%3)
+
+        var price;
+        price=600;
+        console.log("Total cost to buy 5 tickets to a movie is ",5*price)
+
+        var n2;
+        for (var i=1;i<=10;i++){
+            console.log(n2," X ",i," = ",n2*i)
+        }
+        var c,f,c_f,f_c;
+        c= +prompt("Enter temperature in celsius")
+        c_f=(c*9/5)+32
+        console.log(c," is ",c_f)
+        f= +prompt("Enter temperature in farenheit")
+        f_c=(f-32)*5/9;
+        console.log(f," is ",f_c)
+
 
 
 
